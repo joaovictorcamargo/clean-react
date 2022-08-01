@@ -1,0 +1,58 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "typescript-eslint/consistent-type-definition": "off",
+        "typescript-eslint/strict-boolean-expression": "off",
+        "quotes": [2, "double"],
+        "react/react-in-jsx-scope": "off",
+        "import/prefer-default-export": "off",
+        "no-unused-vars": ["warn", { "vars": "all", "args": "none" }],
+        "@typescript-eslint/no-unused-vars": "warn",
+        "linebreak-style": 0,
+        "no-children-prop": "off",
+        "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx", ".ts", ".tsx", ".d.ts"] }],
+        "react/jsx-no-bind": "off",
+        "no-param-reassign": ["error", { "props": false }],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+        "react/jsx-props-no-spreading": ["error", {
+            "html": "ignore",
+            "custom": "ignore",
+            "exceptions": [""]
+        }]
+    },
+    "settings": {
+        "import/resolver": {
+          "node": {
+            "extensions": [".js", ".jsx", ".ts", ".tsx", ".d.ts"]
+          }
+        }
+    }
+  }
